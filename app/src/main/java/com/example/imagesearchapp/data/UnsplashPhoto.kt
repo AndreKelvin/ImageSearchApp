@@ -1,14 +1,14 @@
-package com.example.imagesearchapp
+package com.example.imagesearchapp.data
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class UnsplashPhoto( //constructor with pars
-        val id: String,
-        val description: String?,
-        val urls: UnsplashPhotoUrls,
-        val user: UnsplashUser
+    val id: String,
+    val description: String?,
+    val urls: UnsplashPhotoUrls,
+    val user: UnsplashUser
 ) : Parcelable { //class body
 
     @Parcelize
