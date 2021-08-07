@@ -18,8 +18,8 @@ interface UnsplashApi {
 //the keyword "suspend" means this fun is gonna perform long task (Coroutine)
         //the value name must be the same with the ones in database(GSon)
         @Query("query") query: String,
-        @Query("page") page: String,
-        @Query("per_page") perpage: String,
+        @Query("page") page: Int,
+        @Query("per_page") perpage: Int,
     ): UnsplashResponse
 
 }
